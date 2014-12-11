@@ -16,7 +16,9 @@ if not libpath in sys.path:
 VERSION = '0.1.4'
 
 import requests
+import urllib3 
 
-def plugin_loaded():
-    from imp import reload
-    reload(requests)
+from imp import reload
+reload(requests)
+reload(urllib3)
+
