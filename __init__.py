@@ -16,7 +16,7 @@ if not libpath in sys.path:
 VERSION = '0.1.4'
 
 import requests
-import urllib3 
+from requests.packages import urllib3 
 
 from imp import reload
 reload(requests)
